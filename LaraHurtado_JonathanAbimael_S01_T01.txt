@@ -1,3 +1,11 @@
 Historial Academico Alumnos de la UAMEX.
-
-Identidades  --  Atributos  --  Metodos
+----------------------------------------------------------------------------------------------------------------------
+-	Objeto 	 ---	Identidades	     ---- 	 Atributos 		---	 Metodos		     -
+----------------------------------------------------------------------------------------------------------------------
+1.- 	Alumno	 ---  	usuario(matricula)   ----      	numero de control	---	referencias de pago	     -
+		 ---	contraseña  	     ---- 	calificacion		---     Inscripción y reinscripción  -          
+		 ---			     ----	Nombre de la carrera	---	Herramientas                 -
+		 ---			     ----	Nombre del alumno	--- 	Trayectorias académicas      -
+		 ---			     ----	Curp			---				     -
+		 ---			     ----	Tutor			---				     -	
+-----------------------------------------------------------------------------------------------------------------------							
