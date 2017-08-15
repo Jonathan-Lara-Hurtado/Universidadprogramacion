@@ -4,6 +4,8 @@
 #include "lara.h"
 /*
 
+Alumno:Jonathan Abimael Lara Hurtado
+
 Este programa depende de la libreria lara.h
 
 */
