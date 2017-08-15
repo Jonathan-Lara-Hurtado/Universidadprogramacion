@@ -1,73 +1,56 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-
-int * ReservaVector(int n)
-{
-
-int *a;
-
-a=(int *)malloc(sizeof(int)*n);
-
-return a;
-}
-
-
-
-int **ReservaMatriz(int n,int m)
-{
-
-int **a;
-a= (int **)malloc(sizeof(int * ) * n);
-
-for(int k=0; k<n;k++){
-a[k]=(int *)malloc(sizeof(int)*m);
-
-}
-
-return a;
-
-
-
-}
-
+#include "lara.h"
 
 void main(){
 
-
-
-
-// suma y diferencias de matricez
-
-
-
-
-int **A,**B;
+int **A,**B,**C,**D;
 int n=3,m=4;
 
 A=ReservaMatriz(n,m);
 B=ReservaMatriz(n,m);
+C=ReservaMatriz(n,m);
+
+A=MatrizAleatoria(n,m);
+B=MatrizAleatoria(n,m);
+
+C=SumaMatrizpares(A,B,n,m);
+
+D=RestaMatrizpares(A,B,n,m);
+
+printf("Matriz A:\n");
+imprimirMatriz(A,n,m);
+printf("\n");
+
+printf("Matriz B:\n");
+imprimirMatriz(B,n,m);
+printf("\n");
+
+printf("Resultado de la suma de la Matriz A y B:\n");
+imprimirMatriz(C,n,m);
+printf("\n");
+
+printf("Resultado de la resta de la Matriz A y B:\n");
+imprimirMatriz(D,n,m);
+printf("\n");
+
+
+//fibonacci
+
+int k=6;
+int r;
+
+r=Fibonacci(k);
+printf("El resultado de la serie de fibonacci es:%d\n",r);
+
+
+
+
+
 
 
 
 }
 
 
-/*    
-
-algoritmo de suma y diferencia de matrices 
-
-declarar una matriz C=nxm
-
-
-C=A+B
-C=A-B
-
-vizualizar A,B y C
-llenar las matrices A y B
-con numero aleatorios
-
-
-
-
-*/
